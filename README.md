@@ -52,3 +52,5 @@ If deployment fails:
 - Verify all 4 secrets are added correctly (no typos in names)
 - Check that the Artifact Registry `growthcamp-home-html` exists in your GCP project
 - Ensure the service account has necessary permissions
+
+<!-- Deployment triggered after adding GitHub secrets -->
