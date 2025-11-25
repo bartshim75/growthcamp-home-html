@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="STARTrack으로 SaaS 창업의 모든 것을 배워보세요">
+    <title>STARTrack - GROWTH CAMP</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQNZRHL3NH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-GQNZRHL3NH');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pricing-table {
+            margin: var(--spacing-xl) 0;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--lighter-bg);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        th {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: var(--spacing-md);
+            text-align: center;
+            font-weight: 700;
+        }
+
+        td {
+            padding: var(--spacing-md);
+            border-bottom: 1px solid var(--light-bg);
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background: var(--light-bg);
+        }
+
+        .phase-header {
+            background: var(--secondary-color);
+            color: var(--text-light);
+            font-weight: 700;
+        }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .icon-card {
+            background: var(--lighter-bg);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon-card-icon {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .icon-card-title {
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-dark);
+        }
+
+        .icon-card-desc {
+            color: var(--text-muted);
+            font-size: var(--font-size-sm);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fixed Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo"><img src="public/assets/images/icons/growthCamp_blue.png"
+                    alt="GrowthCamp"></a>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+                <ul class="nav-menu">
+                    <li class="mobile-only"><button class="mobile-menu-close">✕</button></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li class="has-dropdown">
+                        <a href="project.html">Project</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="project_01.html">SaaS UP</a></li>
+                            <li><a href="project_02.html">poob</a></li>
+                            <li><a href="project_03.html">광고지만 괜찮아</a></li>
+                            <li><a href="project_04.html">한줄일기</a></li>
+                            <li><a href="project_05.html">딜리버드</a></li>
+                            <li><a href="project_06.html">씨식가</a></li>
+                            <li><a href="project_07.html">포동</a></li>
+                            <li><a href="project_08.html">줄이당</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="recruit.html">Recruit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Parallax Background -->
+    <section class="hero">
+        <div class="hero-bg" style="background-image: url('public/assets/images/hero/program-hero.jpg');"></div>
+        <div class="hero-content">
+            <h1>STARTrack은 Seed 프로젝트 전문<br>엑셀러레이팅 프로그램입니다</h1>
+        </div>
+    </section>
+
+    <!-- Zero to One Section -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title text-left">고객을 위한 혁신, Zero to One</h2>
+            <div class="section-subtitle text-left">
+                <p>스타트랙은 사업 역량을 갖춘 인재들과 자유롭게 아이디어를 발산하고 과감하게 도전하면 함께 혁신을 꿈꿉니다.</p>
+                <p>고객으로부터 문제를 정의하고, 실험을 통해 빠르게 사업성을 검증할 수 있도록 다양한 네트워크와 자원을 적극 지원합니다.</p>
+            </div>
+
+            <!-- Three Value Cards with Images -->
+            <div class="program-values-grid">
+                <div class="program-value-card">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="public/assets/images/program/철저한고객중심_mobile.png">
+                        <img src="public/assets/images/program/철저한고객중심.png" alt="철저한 고객중심" class="program-value-image">
+                    </picture>
+                </div>
+                <div class="program-value-card">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="public/assets/images/program/직접수행_mobile.png">
+                        <img src="public/assets/images/program/직접수행.png" alt="직접수행" class="program-value-image">
+                    </picture>
+                </div>
+                <div class="program-value-card">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="public/assets/images/program/실험정신스피드_mobile.png">
+                        <img src="public/assets/images/program/실험정신스피드.png" alt="실험정신 스피드" class="program-value-image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STARTrack Program Process -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title text-left">스타트랙 프로세스</h2>
+            <div class="section-subtitle text-left">
+                <p>스타트랙은 사내 공모를 통해 참가자를 모집하며 사업 역량 진단을 통해 최종 선발합니다.</p>
+                <p>팀 빌딩은 도메인과 경력을 기반하여 진행되며, 각 팀은 팀쉽 프로그램과 콘텐츠 위크에 참여합니다.<br></p>
+                <p>프로그램은 Pre와 Ideation 단계로 구성됩니다. <br>
+                    Pre 단계는 고객으로부터 문제를 정의하고, Ideation 단계는 문제의 근본적인 해결책을 검증합니다. <br>
+                    모든 단계는 빠르게 실험을 반복하며, 시장과 고객의 피드백을 아이디어에 반영하는 것을 최우선으로 합니다.</p>
+            </div>
+
+            <!-- Process Diagram Image -->
+            <div class="program-process-container">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="public/assets/images/program/process_mobile.png">
+                    <img src="public/assets/images/program/process.png" alt="스타트랙 프로세스" class="program-process-image">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Curriculum Table -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title text-left">단계별 일정</h2>
+            <div class="section-subtitle text-left">
+                <p>프로젝트 수행에 가장 중요한 것은 고객 검증을 위한 실험입니다. 고객이 절실하게 필요로 하는 서비스인지 빠르게 검증하고,</p>
+                <p>데이터를 기준으로 결과를 분석 및 리뷰하여 프로젝트의 다음 단계를 결정합니다.</p>
+            </div>
+
+            <!-- Schedule Diagram Image -->
+            <div class="program-schedule-container">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="public/assets/images/program/단계별일정_mobile.png">
+                    <img src="public/assets/images/program/단계별일정.png" alt="단계별 일정" class="program-schedule-image">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- Required Capabilities Section -->
+    <section class="section section-dark program-capabilities-section"
+        style="background-image: url('public/assets/images/program/필요역량_bg.jpg'); background-size: cover; background-position: center; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 class="section-title" style="color: #fff; text-align: left;">필요 역량</h2>
+            <div class="section-subtitle" style="color: #ccc; text-align: left; margin-left: 0;">
+                <p>프로젝트에 참여하는 모든 팀원이 갖춰야 할 소프트 스킬 셋을 정의하고</p>
+                <p>개인과 프로젝트가 모두 성장할 수 있도록 함께 만들어 나갑니다.</p>
+            </div>
+
+            <!-- Capability Cards with Images -->
+            <div class="program-capabilities-grid">
+                <div class="program-capability-card">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="public/assets/images/program/수평적_열린조직_mobile.png">
+                        <img src="public/assets/images/program/수평적_열린조직.png" alt="수평적 열린조직"
+                            class="program-capability-image">
+                    </picture>
+                </div>
+                <div class="program-capability-card">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="public/assets/images/program/실패에담대_mobile.png">
+                        <img src="public/assets/images/program/실패에담대.png" alt="실패에 담대" class="program-capability-image">
+                    </picture>
+                </div>
+                <div class="program-capability-card">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="public/assets/images/program/업무몰입_mobile.png">
+                        <img src="public/assets/images/program/업무몰입.png" alt="업무몰입" class="program-capability-image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title text-left">다양한 지원</h2>
+            <div class="section-subtitle text-left">
+                <p>프로젝트의 성공을 위해 필요한 다양한 자원과 네트워크를 적극 지원할 수 있도록</p>
+                <p>1:1로 매칭된 전담 엑셀러레이터가 프로젝트 팀에 함께 합니다.</p>
+            </div>
+
+            <!-- Support Cards with Images -->
+            <div class="program-support-grid">
+                <div class="program-support-card">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="public/assets/images/program/전담엑셀러레이터_mobile.png">
+                        <img src="public/assets/images/program/전담엑셀러레이터.png" alt="전담 엑셀러레이터"
+                            class="program-support-image">
+                    </picture>
+                </div>
+                <div class="program-support-card">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="public/assets/images/program/가이드북_mobile.png">
+                        <img src="public/assets/images/program/가이드북.png" alt="가이드북" class="program-support-image">
+                    </picture>
+                </div>
+                <div class="program-support-card">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="public/assets/images/program/환경지원_mobile.png">
+                        <img src="public/assets/images/program/환경지원.png" alt="환경지원" class="program-support-image">
+                    </picture>
+                </div>
+                <div class="program-support-card">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="public/assets/images/program/네트워킹_mobile.png">
+                        <img src="public/assets/images/program/네트워킹.png" alt="네트워킹" class="program-support-image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 class="footer-title">Contact Us</h3>
+            <p class="footer-info">주소 : 서울 용산구 한강대로 32 LG유플러스빌딩 4층 GrowthCamp</p>
+            <p class="footer-info">E-mail : growthcamp@lguplus.co.kr</p>
+            <p class="footer-copyright">Copyright © LG Uplus Corp. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
