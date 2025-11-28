@@ -620,6 +620,33 @@ ul {
   margin: 0;
 }
 
+/* About Page Team Member Styles */
+.about-team-member {
+  text-align: center;
+  background: var(--lighter-bg);
+  border-radius: 12px;
+  /* Rounded rectangle */
+  transition: var(--transition);
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.about-team-member:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.about-team-member .team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  border-radius: 0;
+  /* Ensure image fills the card */
+}
+
 /* ========================================
    Buttons
    ======================================== */
@@ -1804,5 +1831,257 @@ ul {
   .project-btn {
     width: 100%;
     text-align: center;
+  }
+}
+
+/* ========================================
+   Mobile UI Updates (Max-width: 768px)
+   ======================================== */
+@media (max-width: 768px) {
+
+  /* --- General Header & Hero --- */
+  .header-container {
+    justify-content: center;
+    /* Center logo */
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mobile-menu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hero h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    /* Adjusted for mobile */
+    word-break: keep-all;
+    padding: 0 20px;
+  }
+
+  /* --- General Section Styling --- */
+  .section-title,
+  .section-title.text-left {
+    text-align: left !important;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+  }
+
+  .section-subtitle,
+  .section-subtitle.text-left {
+    text-align: left !important;
+    font-size: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    line-height: 1.6;
+  }
+
+  /* --- About Page --- */
+  .about-hero h1 {
+    /* Specific line breaks handled by HTML <br>, just ensure centering */
+  }
+
+  .mission-container {
+    flex-direction: column;
+  }
+
+  .mission-text {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    /* Stack values vertically */
+    gap: 1.5rem;
+  }
+
+  .value-card {
+    text-align: center;
+    /* Images centered inside card */
+  }
+
+  .history-image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for team on mobile */
+    gap: 15px;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  /* --- Program Page --- */
+  .program-values-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .program-value-card img {
+    margin: 0 auto;
+    /* Center images */
+  }
+
+  .program-process-container img,
+  .program-schedule-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .program-capabilities-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .program-support-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2x2 grid for support */
+    gap: 15px;
+  }
+
+  /* --- Project Page --- */
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+    /* Stack stats vertically */
+    gap: 1.5rem !important;
+  }
+
+  .projects-grid-custom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for projects */
+    gap: 15px;
+  }
+
+  .project-card-custom {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .project-logo-area {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+  }
+
+  .project-logo-area img {
+    max-width: 60%;
+    max-height: 60%;
+  }
+
+  .project-info {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .project-name {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .project-desc {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  .interview-carousel-container {
+    margin: 20px auto;
+  }
+
+  /* --- News Page --- */
+  .news-list {
+    padding: 2rem 1rem;
+  }
+
+  .news-item {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .news-item-image {
+    width: 100%;
+    height: 200px;
+    /* Fixed height for consistency */
+    min-width: auto;
+  }
+
+  .news-item-content {
+    padding: 1.5rem;
+  }
+
+  .news-item-title {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .news-item-excerpt {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .news-item-date {
+    text-align: left;
+  }
+
+  /* --- Recruit Page --- */
+  .recruit-career-section {
+    padding: 4rem 1.5rem;
+    text-align: left;
+    /* Ensure text is left aligned */
+  }
+
+  .recruit-career-section h2,
+  .recruit-career-section p {
+    text-align: left;
+  }
+
+  .btn-recruit-apply {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    /* Center button */
+  }
+
+  /* Footer Mobile */
+  .footer {
+    padding: 30px 20px;
+    text-align: left;
+  }
+
+  .footer-title,
+  .footer-info {
+    text-align: left;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
   }
 }
